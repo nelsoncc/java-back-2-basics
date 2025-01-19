@@ -17,5 +17,12 @@ public class GenericsExample {
         doubleGenericPrinter.print();
         GenericPrinter<String> strGenericPrinter = new GenericPrinter<>("String to print generic");
         strGenericPrinter.print();
+
+
+        //
+        AnimalPrinter<Dog> dogAnimalPrinter = new AnimalPrinter<>(new Dog());
+        dogAnimalPrinter.print();
+        AnimalPrinter<Cat> catAnimalPrinter = new AnimalPrinter<>(new Cat());
+        catAnimalPrinter.print();
     }
 }

@@ -6,6 +6,7 @@ In this repository, the Generics package provides reusable, type-safe classes th
 - `IntegerPrinter`: A class for printing integers.
 - `DoublePrinter`: A class for printing doubles.
 - `GenericPrinter<T>`: A generic class for printing any type of object.
+- `AnimalPrinter<T extends Animal & Serializable>`: A generic class for printing animals that are serializable.
 
 ## Usage
 
@@ -21,6 +22,11 @@ public class GenericsExample {
         doubleGenericPrinter.print();
         GenericPrinter<String> strGenericPrinter = new GenericPrinter<>("String to print generic");
         strGenericPrinter.print();
+
+        AnimalPrinter<Dog> dogAnimalPrinter = new AnimalPrinter<>(new Dog());
+        dogAnimalPrinter.print();
+        AnimalPrinter<Cat> catAnimalPrinter = new AnimalPrinter<>(new Cat());
+        catAnimalPrinter.print();
     }
 }
 ```
