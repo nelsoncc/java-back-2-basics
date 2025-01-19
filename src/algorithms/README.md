@@ -4,7 +4,7 @@
 1. [Sorting](./sort)
     - [BubbleSort](./sort/BubbleSort.java)
     - QuickSort
-    - MergeSort
+    - [MergeSort](./sort/MergeSort.java)
     - InsertionSort
     - SelectionSort
 2. [Searching](./search)
