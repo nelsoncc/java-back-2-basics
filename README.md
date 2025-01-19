@@ -6,6 +6,7 @@ A comprehensive collection of examples, exercises, and solutions for data struct
 
 - **Data Structures**: Implementations and use cases for arrays, linked lists, trees, graphs, stacks, queues, and more.
 - **Algorithms**: Sorting (QuickSort, MergeSort, BubbleSort, etc.), searching, recursion, dynamic programming, greedy algorithms, and more.
+- **Generics**: A collection of generic classes to demonstrate the power and flexibility of Java generics, allowing type-safe operations with various data types.
 - **LeetCode Solutions**: Step-by-step solutions to popular coding challenges with detailed explanations.
 - **Practice Exercises**: Hands-on problems to sharpen your skills and deepen your understanding of key concepts.
 
