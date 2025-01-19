@@ -24,5 +24,13 @@ public class GenericsExample {
         dogAnimalPrinter.print();
         AnimalPrinter<Cat> catAnimalPrinter = new AnimalPrinter<>(new Cat());
         catAnimalPrinter.print();
+
+        shout("John", 5);
+        shout(555, "other");
+        shout(5.55, 12);
+    }
+
+    private static <T, V> void shout(T thingToShout, V otherThingToShout) {
+        System.out.println(thingToShout + "! " + otherThingToShout + "!!");
     }
 }
