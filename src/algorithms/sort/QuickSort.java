@@ -1,5 +1,7 @@
 package algorithms.sort;
 
+import java.util.Random;
+
 public class QuickSort {
 
     public static void main(String[] args) {
@@ -29,7 +31,9 @@ public class QuickSort {
         }
 
         // Choose the pivot element (last element in the current sub-array)
-        int pivot = array[highIndex];
+        int pivotIndex = new Random().nextInt(highIndex - lowIndex) + lowIndex;
+        int pivot = array[pivotIndex];
+        swap(array, pivotIndex, highIndex);
 
         int leftPointer = partition(array, lowIndex, highIndex, pivot);
 
