@@ -5,7 +5,7 @@
     - [BubbleSort](./sort/BubbleSort.java)
     - [QuickSort](./sort/QuickSort.java)
     - [MergeSort](./sort/MergeSort.java)
-    - InsertionSort
+    - [InsertionSort](./sort/InsertSort.java)
     - SelectionSort
 2. [Searching](./search)
     - BinarySearch
