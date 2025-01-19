@@ -23,19 +23,12 @@ public class InsertSort {
         for (int i = 1; i < array.length; i++) {
             int currentValue = array[i];
             int j = i - 1;
-            int k = i;
             while (j >= 0 && array[j] > currentValue) {
-                swap(array, j, k);
+                array[j+1] = array[j];
                 j--;
-                k--;
             }
+            array[j + 1] = currentValue;
         }
 
-    }
-
-    private static void swap(int[] array, int index1, int index2) {
-        int aux = array[index1];
-        array[index1] = array[index2];
-        array[index2] = aux;
     }
 }
