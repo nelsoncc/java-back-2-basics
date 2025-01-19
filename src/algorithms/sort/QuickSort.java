@@ -31,6 +31,14 @@ public class QuickSort {
         // Choose the pivot element (last element in the current sub-array)
         int pivot = array[highIndex];
 
+        int leftPointer = partition(array, lowIndex, highIndex, pivot);
+
+        // Recursively sort the sub-arrays
+        quickSort(array, lowIndex, leftPointer - 1);
+        quickSort(array, leftPointer + 1, highIndex);
+    }
+
+    private static int partition(int[] array, int lowIndex, int highIndex, int pivot) {
         // Initialize pointers for the partitioning process
         int leftPointer = lowIndex;
         int rightPointer = highIndex;
@@ -51,10 +59,7 @@ public class QuickSort {
         }
         // Swap the pivot element with the element at the left pointer
         swap(array, leftPointer, highIndex);
-
-        // Recursively sort the sub-arrays
-        quickSort(array, lowIndex, leftPointer - 1);
-        quickSort(array, leftPointer + 1, highIndex);
+        return leftPointer;
     }
 
     // Helper method to swap two elements in the array
