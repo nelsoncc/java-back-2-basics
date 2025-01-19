@@ -8,6 +8,7 @@ A comprehensive collection of examples, exercises, and solutions for data struct
 - **Algorithms**: Sorting (QuickSort, MergeSort, BubbleSort, etc.), searching, recursion, dynamic programming, greedy algorithms, and more.
 - **Generics**: A collection of generic classes to demonstrate the power and flexibility of Java generics, allowing type-safe operations with various data types.
 - **Final Keyword**: A guide to using the `final` keyword in Java, including examples for final classes, methods, and variables.
+- **Static vs. Non-Static**: A guide to understanding the differences between static and non-static methods, variables, and classes in Java.
 - **LeetCode Solutions**: Step-by-step solutions to popular coding challenges with detailed explanations.
 - **Practice Exercises**: Hands-on problems to sharpen your skills and deepen your understanding of key concepts.
 
