@@ -31,10 +31,24 @@ public class GenericsExample {
         shout("John", 5);
         shout(555, "other");
         shout(5.55, 12);
+
+        // Wildcards
+        // List<Integer> intList = new ArrayList<>();
+        // intList.add(3);
+        // printList(intList);
+
+        // Upper-bounded wildcard
+        List<Cat> catList = new ArrayList<>();
+        catList.add(new Cat("kitty"));
+        printList(catList);
     }
 
     private static <T, V> void shout(T thingToShout, V otherThingToShout) {
         System.out.println(thingToShout + "! " + otherThingToShout + "!!");
+    }
+
+    private static void printList(List<? extends Animal> myList) {
+        System.out.println(myList);
     }
 }
 ```
