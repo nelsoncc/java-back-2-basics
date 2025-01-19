@@ -3,7 +3,7 @@
 ## Table of Contents
 1. [Sorting](./sort)
     - [BubbleSort](./sort/BubbleSort.java)
-    - QuickSort
+    - [QuickSort](./sort/QuickSort.java)
     - [MergeSort](./sort/MergeSort.java)
     - InsertionSort
     - SelectionSort
